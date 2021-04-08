@@ -421,9 +421,6 @@ body {
   font-size: 2.8rem;
   font-family: OakesGrotesk;
   text-transform: lowercase;
-  -webkit-filter: blur(0.01em);
-  -moz-filter: blur(0.01em);
-  filter: blur(0.01em);
   margin-bottom: 2rem;
 }
 
@@ -434,9 +431,6 @@ body {
   line-height: 0.8;
   font-weight: 400;
   text-transform: lowercase;
-  -webkit-filter: blur(0.005em);
-  -moz-filter: blur(0.005em);
-  filter: blur(0.005em);
   margin: 0;
   position: relative;
 }
@@ -456,9 +450,6 @@ body {
   color: #DFFE52;
   font-family: OakesGrotesk;
   font-size: 2rem;
-  -webkit-filter: blur(0.01em);
-  -moz-filter: blur(0.01em);
-  filter: blur(0.01em);
   margin-top: 4rem;
 }
 
