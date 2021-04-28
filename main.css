@@ -401,7 +401,6 @@ html {
 
 body {
   background-image: url('images/background.png');
-  background-position: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
@@ -425,23 +424,23 @@ body {
 }
 
 .title {
-  font-family: 'Margin', Helvetica, Arial, Sans-Serif;
-  color: #DFFE52;
-  font-size: 6rem;
-  line-height: 0.8;
-  font-weight: 400;
-  text-transform: lowercase;
-  margin: 0;
-  position: relative;
+  text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
 }
 
-.title:before, .title:after {
+.logo svg {
+  width: 75%;
+}
+
+.logo:before, .logo:after {
   content: '';
   display: block;
   width: 271px;
   height: 34px;
   position: relative;
-  margin: 20px 0;
+  margin: 10px 0;
   background-image: url('images/decoration.svg');
   left: calc(50% - 135px);
 }
@@ -458,6 +457,11 @@ body {
 }
 
 @media (min-width: 767px) {
+
+  .logo svg {
+    width: 100%;
+  }
+
   .thingy {
     font-size: 4.8rem;
   }
