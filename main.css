@@ -412,6 +412,14 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  padding: 0 15px;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .container{
+    /* The hack for Safari */
+    min-height: -webkit-fill-available;
+  }
 }
 
 .thingy {
@@ -425,24 +433,16 @@ body {
 
 .title {
   text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    position: absolute;
+  font-size: 0;
+  height: 0;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
 }
 
 .logo svg {
-  width: 75%;
-}
-
-.logo:before, .logo:after {
-  content: '';
-  display: block;
-  width: 271px;
-  height: 34px;
-  position: relative;
-  margin: 10px 0;
-  background-image: url('images/decoration.svg');
-  left: calc(50% - 135px);
+  width: 60%;
 }
 
 .bodystuff {
@@ -460,6 +460,10 @@ body {
 
   .logo svg {
     width: 100%;
+  }
+
+  .container {
+    padding: 0;
   }
 
   .thingy {
